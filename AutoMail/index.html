@@ -6,7 +6,7 @@
 <script type="text/javascript" src="autoMail.1.0.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-	$('#email1,#email2,#email3,#email4,#email5,#email6').autoMail({
+	$('#email1').autoMail({
 		emails:['qq.com','163.com','126.com','sina.com','sohu.com','yahoo.cn','gmail.com','hotmail.com','live.cn']
 	});
 });
@@ -20,20 +20,7 @@ form{float:left;margin:0 0 20px;width:100%;}
 </head>
 <body>
 <div id="main">
-	<h1>JautoMail.1.0.min.js</h1>
-	<pre style="color:#008066;">
-	</pre>
-	<h3>1、普通form中的input</h3>
-	<form action=""><input id="email1" type="text" name="email"/><input type="submit" value="提交1"/></form>
-	<h3>2、被修饰过高度的input</h3>
-	<form action=""><input id="email2" type="text" name="email" style="height:30px;"/><input type="submit" value="提交2"/></form>
-	<h3>3、被修饰过内间距的input</h3>
-	<form action=""><input id="email3" type="text" name="email" style="padding:10px;"/><input type="submit" value="提交3"/></form>
-	<h3>4、一个form中多个input</h3>
-	<form action=""><input id="email4" type="text" name="email"/><input type="submit" value="提交4"/><input id="email5" type="text" name="email"/><input type="submit" value="提交5"/></form>
-	<div style="position:absolute;top:30px;left:30px;">
-		<form action=""><h3>5、浮动层中的input：</h3><input id="email6" type="text" name="email"/><input type="submit" value="提交6"/></form>
-	</div>
+	<form action=""><input id="email1" type="text" name="email"/><input type="submit" value="Submit"/></form>
 </div>
 </body>
 </html>
